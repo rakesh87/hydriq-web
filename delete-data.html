@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydriq — Delete Your Data</title>
+    <style>
+        :root {
+            --bg: #0D1117;
+            --surface: #161B22;
+            --text: #E6EDF3;
+            --muted: #8B949E;
+            --accent: #6DD8E5;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            padding: 24px;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        h1 { font-size: 1.75rem; margin-bottom: 8px; color: var(--accent); }
+        h2 { font-size: 1.25rem; margin-top: 32px; margin-bottom: 12px; color: var(--accent); }
+        p, li { margin-bottom: 12px; color: var(--text); }
+        ul, ol { padding-left: 24px; }
+        .subtitle { color: var(--muted); font-size: 0.9rem; margin-bottom: 24px; }
+        .highlight { background: var(--surface); border-left: 3px solid var(--accent); padding: 16px; border-radius: 4px; margin: 16px 0; }
+        a { color: var(--accent); }
+        .step { background: var(--surface); border-radius: 8px; padding: 16px; margin: 12px 0; }
+        .step-number { color: var(--accent); font-weight: 700; font-size: 1.1rem; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th, td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #30363D; }
+        th { color: var(--accent); font-weight: 600; }
+        .path { font-family: monospace; background: var(--surface); padding: 2px 6px; border-radius: 3px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<h1>Delete Your Data</h1>
+<p class="subtitle">How to delete your personal data from Hydriq</p>
+
+<div class="highlight">
+    <strong>Your data, your control.</strong> All Hydriq data is stored locally on your device in an encrypted database. Nothing is sent to our servers. You can delete any or all of your data at any time using the steps below.
+</div>
+
+<h2>Option 1: Delete All Data</h2>
+<p>This permanently removes all hydration logs, profile information, achievements, and preferences.</p>
+
+<div class="step">
+    <p><span class="step-number">1.</span> Open <strong>Hydriq</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">2.</span> Tap the <strong>Settings</strong> tab (bottom navigation)</p>
+</div>
+<div class="step">
+    <p><span class="step-number">3.</span> Tap <strong>Data &amp; Privacy</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">4.</span> Scroll down and tap <strong>Delete All Data</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">5.</span> Confirm the deletion in the dialog</p>
+</div>
+
+<p>This action is <strong>irreversible</strong>. All locally stored data will be permanently erased and the app will reset to its initial state.</p>
+
+<h2>Option 2: Delete Cloud Backups</h2>
+<p>If you enabled Google Drive backup, copies of your data are stored in your Google Drive's app-isolated folder. To delete them:</p>
+
+<div class="step">
+    <p><span class="step-number">1.</span> Open <strong>Hydriq</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Data &amp; Privacy</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">2.</span> Tap <strong>Delete Cloud Backups</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">3.</span> Confirm the deletion</p>
+</div>
+
+<p>This removes all Hydriq backup files from your Google Drive. Cloud backups are stored in a hidden <span class="path">appDataFolder</span> that is only accessible by Hydriq &mdash; they are not visible in your Google Drive UI.</p>
+
+<h2>Option 3: Delete Individual Entries</h2>
+<p>To remove specific drink logs without deleting everything:</p>
+
+<div class="step">
+    <p><span class="step-number">1.</span> On the <strong>Home</strong> tab, find the entry in the <strong>Entries</strong> section</p>
+</div>
+<div class="step">
+    <p><span class="step-number">2.</span> Swipe the entry left to delete it</p>
+</div>
+<div class="step">
+    <p><span class="step-number">3.</span> Tap <strong>Undo</strong> on the Snackbar if you deleted by mistake</p>
+</div>
+
+<h2>Option 4: Uninstall the App</h2>
+<p>Uninstalling Hydriq from your device removes all locally stored data, including the encrypted database, preferences, and local backup files. No data remains on your device after uninstall.</p>
+<p>Note: If you enabled Google Drive backup, cloud copies are <strong>not</strong> automatically deleted when you uninstall. Use Option 2 above to delete cloud backups before uninstalling, or revoke Hydriq's access via <a href="https://myaccount.google.com/permissions">Google Account Permissions</a>.</p>
+
+<h2>What Data Is Deleted</h2>
+
+<table>
+    <tr><th>Data Type</th><th>Delete All Data</th><th>Delete Cloud Backups</th><th>Uninstall</th></tr>
+    <tr><td>Hydration logs</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Profile (name, weight, sex)</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Achievements &amp; streaks</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>App preferences</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Local backup files (.hydriq)</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Google Drive backups</td><td>Not affected</td><td>Deleted</td><td>Not affected</td></tr>
+    <tr><td>Purchase history (Pro, Tips)</td><td>Not affected*</td><td>Not affected</td><td>Not affected*</td></tr>
+</table>
+
+<p style="color: var(--muted); font-size: 0.85rem;">* Purchase records are managed by Google Play and cannot be deleted by the app. To request deletion of purchase records, contact <a href="https://support.google.com/googleplay/answer/7659581">Google Play Support</a>.</p>
+
+<h2>Data Retention</h2>
+<p>Hydriq does not retain any data after deletion. There are no server-side copies, no analytics logs, and no backup retention periods. When you delete your data using any of the methods above, it is permanently removed.</p>
+
+<h2>Contact</h2>
+<p>If you have questions about data deletion or need assistance, contact us at <a href="mailto:hydriq.app@gmail.com">hydriq.app@gmail.com</a>.</p>
+
+<hr style="border-color: #30363D; margin: 32px 0;">
+<p style="color: var(--muted); font-size: 0.85rem;">
+    <a href="https://rakesh87.github.io/hydriq-privacy/">Privacy Policy</a> &middot; &copy; 2026 Hydriq. All rights reserved.
+</p>
+
+</body>
+</html>
