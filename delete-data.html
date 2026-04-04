@@ -65,8 +65,26 @@
 
 <p>This action is <strong>irreversible</strong>. All locally stored data will be permanently erased and the app will reset to its initial state.</p>
 
-<h2>Option 2: Delete Cloud Backups</h2>
-<p>If you enabled Google Drive backup, encrypted copies of your data are stored in your Google Drive's app-isolated folder. To delete them:</p>
+<h2>Option 2: Delete Local Backups</h2>
+<p>Hydriq creates encrypted backup files (.hydriq) on your device when you use the backup feature or have auto-backup enabled. To delete them:</p>
+
+<div class="step">
+    <p><span class="step-number">1.</span> Open <strong>Hydriq</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Data &amp; Privacy</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">2.</span> Scroll to the <strong>Local Backups</strong> section</p>
+</div>
+<div class="step">
+    <p><span class="step-number">3.</span> Tap <strong>Delete Local Backups</strong></p>
+</div>
+<div class="step">
+    <p><span class="step-number">4.</span> Confirm the deletion (two-step confirmation)</p>
+</div>
+
+<p>This removes all encrypted .hydriq backup files from your device. Your hydration data and cloud backups are not affected.</p>
+
+<h2>Option 3: Delete Cloud Backups</h2>
+<p>If you enabled Google Drive backup, copies of your data are stored in your Google Drive's app-isolated folder. To delete them:</p>
 
 <div class="step">
     <p><span class="step-number">1.</span> Open <strong>Hydriq</strong> &rarr; <strong>Settings</strong> &rarr; <strong>Data &amp; Privacy</strong></p>
@@ -89,7 +107,7 @@
     <p><span class="step-number">2.</span> Optionally, revoke Hydriq's access via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a></p>
 </div>
 
-<h2>Option 3: Delete Individual Entries</h2>
+<h2>Option 4: Delete Individual Entries</h2>
 <p>To remove specific drink logs without deleting everything:</p>
 
 <div class="step">
@@ -102,22 +120,22 @@
     <p><span class="step-number">3.</span> Tap <strong>Undo</strong> on the Snackbar if you deleted by mistake</p>
 </div>
 
-<h2>Option 4: Uninstall the App</h2>
+<h2>Option 5: Uninstall the App</h2>
 <p>Uninstalling Hydriq from your device removes all locally stored data, including the encrypted database, preferences, and local backup files. No data remains on your device after uninstall.</p>
 <p>Note: If you enabled Google Drive backup, cloud copies are <strong>not</strong> automatically deleted when you uninstall. Use Option 2 above to delete cloud backups before uninstalling, or revoke Hydriq's access via <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">Google Account Permissions</a>.</p>
 
 <h2>What Data Is Deleted</h2>
 
 <table>
-    <tr><th>Data Type</th><th>Delete All Data</th><th>Delete Cloud Backups</th><th>Uninstall</th></tr>
-    <tr><td>Hydration logs</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>Profile (name, weight, sex)</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>Spirit progress &amp; cosmetics</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>Achievements &amp; streaks</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>App preferences</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>Local backup files (.hydriq)</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
-    <tr><td>Google Drive backups</td><td>Not affected</td><td>Deleted</td><td>Not affected</td></tr>
-    <tr><td>Purchase history (Pro, Tips)</td><td>Not affected*</td><td>Not affected</td><td>Not affected*</td></tr>
+    <tr><th>Data Type</th><th>Delete All Data</th><th>Delete Local Backups</th><th>Delete Cloud Backups</th><th>Uninstall</th></tr>
+    <tr><td>Hydration logs</td><td>Deleted</td><td>Not affected</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Profile (name, weight, sex)</td><td>Deleted</td><td>Not affected</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Spirit progress &amp; cosmetics</td><td>Deleted</td><td>Not affected</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Achievements &amp; streaks</td><td>Deleted</td><td>Not affected</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>App preferences</td><td>Deleted</td><td>Not affected</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Local backup files (.hydriq)</td><td>Deleted</td><td>Deleted</td><td>Not affected</td><td>Deleted</td></tr>
+    <tr><td>Google Drive backups</td><td>Not affected</td><td>Not affected</td><td>Deleted</td><td>Not affected</td></tr>
+    <tr><td>Purchase history (Pro, Tips)</td><td>Not affected*</td><td>Not affected</td><td>Not affected</td><td>Not affected*</td></tr>
 </table>
 
 <p style="color: var(--color-text-secondary); font-size: 0.85rem;">* Purchase records are managed by Google Play and cannot be deleted by the app. To request deletion of purchase records, contact <a href="https://support.google.com/googleplay/answer/7659581" target="_blank" rel="noopener">Google Play Support</a>.</p>
